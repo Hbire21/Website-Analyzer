@@ -1,0 +1,68 @@
+1506933811403	geckodriver	INFO	Listening on 127.0.0.1:53361
+1506933812312	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.zs4WnL24BCVK
+1506933812313	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1506933812358	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42427
+1506933815596	Marionette	INFO	Enabled via --marionette
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1506933822286	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1506933822302	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1506933822605	Marionette	INFO	Listening on port 42427
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1506933822693	Marionette	WARN	TLS certificate errors will be ignored for this session
+1506933822741	Marionette	DEBUG	loaded listener.js
+1506933822779	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1506933822820	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1506933822820	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1506933822887	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://127.0.0.1:8000/Analyzer/Tech"
+1506933822965	Marionette	DEBUG	Received DOM event "pageshow" for "http://127.0.0.1:8000/Analyzer/Tech"
+1506933846937	geckodriver	INFO	Listening on 127.0.0.1:59305
+1506933847937	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.Ur31IZWxQ3qN
+1506933847938	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1506933847944	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38385
+1506933849930	Marionette	INFO	Enabled via --marionette
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1506933854938	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1506933855063	Marionette	INFO	Listening on port 38385
+1506933855068	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1506933855176	Marionette	WARN	TLS certificate errors will be ignored for this session
+1506933855239	Marionette	DEBUG	loaded listener.js
+1506933855316	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1506933855351	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1506933855351	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1506933855448	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://127.0.0.1:8000/Analyzer/Tech"
+1506933855482	Marionette	DEBUG	Received DOM event "pageshow" for "http://127.0.0.1:8000/Analyzer/Tech"
+1506933888891	geckodriver	INFO	Listening on 127.0.0.1:45949
+1506933889889	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.KU5aOHULkxsG
+1506933889890	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1506933889893	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43487
+1506933892115	Marionette	INFO	Enabled via --marionette
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1506933895074	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1506933895088	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1506933895344	Marionette	INFO	Listening on port 43487
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1506933895414	Marionette	WARN	TLS certificate errors will be ignored for this session
+1506933895459	Marionette	DEBUG	loaded listener.js
+1506933895487	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1506933895506	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1506933895506	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1506933895567	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://127.0.0.1:8000/Analyzer/Tech"
+1506933895594	Marionette	DEBUG	Received DOM event "pageshow" for "http://127.0.0.1:8000/Analyzer/Tech"
+1506933920444	geckodriver	INFO	Listening on 127.0.0.1:55425
+1506933921442	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.pNEqykDjSuAw
+1506933921443	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1506933921447	geckodriver::marionette	INFO	Connecting to Marionette on localhost:45561
+1506933922657	Marionette	INFO	Enabled via --marionette
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1506933930646	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1506933930670	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1506933931028	Marionette	INFO	Listening on port 45561
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1506933931418	Marionette	WARN	TLS certificate errors will be ignored for this session
+1506933931489	Marionette	DEBUG	loaded listener.js
+1506933931591	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1506933931672	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1506933931672	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1506933931764	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://127.0.0.1:8000/Analyzer/Tech"
+1506933931884	Marionette	DEBUG	Received DOM event "pageshow" for "http://127.0.0.1:8000/Analyzer/Tech"

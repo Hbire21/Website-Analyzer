@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class="container" xmlns="http://www.w3.org/1999/html">
+<h1>Get Info!</h1>
+<div class="jumbotron">
+    <div class="form">
+    <form method="get" action="">{% csrf_token %}
+<input type="text" name="query" placeholder="URL Here....."/>
+<input type="submit" class="btn btn-primary" value="Scan" type="button"/>
+        </form>
+        </div>
+<br>
+
+      </div>
+  </div>
+
+</div>
+
+  </div>
+
+
+
+
+
+    {% if query1 is not None %}
+
+    <div class="container1">
+<div class="w3-example">
+<h2>URL</h2>
+<div class="w3-code notranslate cssHigh">{{ query1 }}</div>
+<a class="w3-btn w3-margin-bottom" href="#" target="_blank">Detail&raquo;</a>
+</div>
+
+    <div class="w3-example">
+<h2>Script Files</h2>
+<div class="w3-code notranslate cssHigh">
+        {% for c in scripts %}
+            {{ c }}<br>
+        {% endfor %}
+</div>
+<a class="w3-btn w3-margin-bottom" href="#" target="_blank">Detail&raquo;</a>
+    </div>
+
+
+    <div class="w3-example">
+<h2>Content Length</h2>
+<div class="w3-code notranslate cssHigh">
+   <h3>{{ content_len }}</h3>
+</div>
+<a class="w3-btn w3-margin-bottom" href="#" target="_blank">Detail&raquo;</a>
+    </div>
+
+
+        <div class="w3-example">
+<h2>Iframe Info</h2>
+<div class="w3-code notranslate cssHigh">
+        {% for b in i_links %}
+            {{ b }}<br>
+        {% endfor %}
+
+</div>
+<a class="w3-btn w3-margin-bottom" href="#" target="_blank">Detail&raquo;</a>
+    </div>
+
+<div class="w3-example">
+<h2>Iframe Info</h2>
+<div class="w3-code notranslate cssHigh">
+        {% for a in link_a %}
+            {{ a }}<br>
+        {% endfor %}
+
+</div>
+<a class="w3-btn w3-margin-bottom" href="#" target="_blank">Detail&raquo;</a>
+    </div>
+
+
+
+
+ <div class="w3-example">
+<h2>Script Data</h2>
+<div class="w3-code notranslate cssHigh">
+<strong>Result</strong>
+
+            {{ script_data }}<br>
+
+
+</div>
+<a class="w3-btn w3-margin-bottom" href="#" target="_blank">Detail&raquo;</a>
+    </div>
+
+    {% else %}
+
+        <div class="container">
+
+            <h3>No Entry</h3>
+
+        </div>
+     {% endif %}
+
+{% endblock %}
