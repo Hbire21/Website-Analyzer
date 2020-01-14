@@ -1,6 +1,6 @@
 # Website-Analyzer
-Analyzes Website source code and stores the details in database and show for user.
 
+Analyzes Website source code and stores the details in database and show for user.
 
 ## Pre conditions 
 
@@ -33,22 +33,9 @@ Attackers lure an unsuspecting victim to visit malicious websites and they steal
 
 # Functonality 
 
-## Features 
-
-  #### Detection
-  #### Prediction 
-  #### Real-time 
-
-### Detection 
-
-#### W.M.A Detection Functionalities                              
-
-#### W.M.A Extraction Functionalities 
-
 ### Prediction 
 
-Configuring X-frame header helps to protect a website from clickjacking “Clickjacking (UI redressing attack)  is when an attacker uses multiple transparent or opaque layers to trick a user into clicking on a button or link on another page when they were intending to click on the the top level page.”  Source: Owasp
-Discovering that the website has no protection against this attack would be the first thing to do and prediction relies here : let’s declare that there is a website W, there are different possible mitigation methods M1, M2, M3, ……..
+Configuring X-frame header helps to protect a website from clickjacking “Clickjacking (UI redressing attack)  is when an attacker uses multiple transparent or opaque layers to trick a user into clicking on a button or link on another page when they were intending to click on the the top level page.”  Source: Owasp Discovering that the website has no protection against this attack would be the first thing to do and prediction relies here : let’s declare that there is a website W, there are different possible mitigation methods M1, M2, M3, ……..
 
 Scenario - If W has protection against clickjacking 
 it could be either frame buster or X-frame Options, “as frame busters are hacks. Nasty messy hacks of limited efficiency.
@@ -78,8 +65,7 @@ The detection performed by collecting resources of client side W resources.
 
 ### URL-Based 
 
-Malicious URL or  malicious website, is a common and serious threat to cybersecurity. Malicious URLs host unsolicited content (spam, phishing, drive-by exploits, etc.) and lure unsuspecting users to become victims of scams (monetary loss, theft of private information, and malware installation), and cause losses of billions of dollars every year. It is imperative to detect and act on such threats in a timely manner. Source- A survey
-In this section, W.M.A perform analysis on any urls that it may have encountered.
+Malicious URL or  malicious website, is a common and serious threat to cybersecurity. Malicious URLs host unsolicited content (spam, phishing, drive-by exploits, etc.) and lure unsuspecting users to become victims of scams (monetary loss, theft of private information, and malware installation), and cause losses of billions of dollars every year. It is imperative to detect and act on such threats in a timely manner. Source- A survey In this section, W.M.A perform analysis on any urls that it may have encountered.
 
 
 ### Automated Google search feature
@@ -116,15 +102,12 @@ call X-FRAME option mitigation enable detection_func  and call Address Bar based
 ```
 
 ### Redirected url analysis 
-A URL Redirection Attack is a kind of vulnerability that redirects you to another page freely out of the original website when accessed, page could lead to a malicious page that resembles the original, and tries to trick the user into giving their credentials. Source - Paralliverse
-Get the final redirected url and test against X-FRAME option mitigation enable detection , Phishing features, Google safe browsing blacklist.
 
+A URL Redirection Attack is a kind of vulnerability that redirects you to another page freely out of the original website when accessed, page could lead to a malicious page that resembles the original, and tries to trick the user into giving their credentials. Source - Paralliverse Get the final redirected url and test against X-FRAME option mitigation enable detection , Phishing features, Google safe browsing blacklist.
 
 Scenario 
 
-if U give a valid url that have a redirection capability.
-W.M.A get the final redirected url or possible url that can be visited by U and perform
-url_analysis.
+if U give a valid url that have a redirection capability. W.M.A get the final redirected url or possible url that can be visited by U and perform url_analysis.
 
 ```python 
 
@@ -142,8 +125,8 @@ call X-FRAME option mitigation enable detection_func and call Address Bar based 
 ```
 
 ### Invalid url analysis 
-Invalid url When you conduct Internet research into products, competitors, clients and prospects, you use Uniform Resource Locators, or URLs, to locate the online destinations of the information you want to evaluate. Enter an invalid URL and your browser software displays a warning that the website or page you want to view doesn't exist. Distinguishing incorrect entries from those that really don't point to valid sites or pages can help you correct your entries and finish your research. Example Mistyped, Incomplete, Nonexistent, Invalid Characters. Source- Chron
-If U give an invalid url W.M.A validate the url using  google shortener behavior, redirected url.
+
+Invalid url When you conduct Internet research into products, competitors, clients and prospects, you use Uniform Resource Locators, or URLs, to locate the online destinations of the information you want to evaluate. Enter an invalid URL and your browser software displays a warning that the website or page you want to view doesn't exist. Distinguishing incorrect entries from those that really don't point to valid sites or pages can help you correct your entries and finish your research. Example Mistyped, Incomplete, Nonexistent, Invalid Characters. Source- Chron If U give an invalid url W.M.A validate the url using  google shortener behavior, redirected url.
 
 Scenario 
 
@@ -172,8 +155,8 @@ call X-FRAME option mitigation enable detection_func  and call Address Bar based
 ```
 
 ## Sample phishing features 
-Phishing is an online criminal act that occurs when a malicious web page impersonates as legitimate webpage so as to acquire sensitive information from the user. Phishing attack continues to pose a serious risk for web users and annoying threat. Source Springer Open
-Address Bar features
+
+Phishing is an online criminal act that occurs when a malicious web page impersonates as legitimate webpage so as to acquire sensitive information from the user. Phishing attack continues to pose a serious risk for web users and annoying threat. Source Springer Open Address Bar features
 
 scenario 
 
@@ -192,8 +175,8 @@ Call add_clean_behaviour()
 ```
 
 ## HTML tag analysis and JavaScript analysis 
-Html tag analysis 
 
+Html tag analysis 
 Meta tag redirection 
 What to look for
 
@@ -221,13 +204,16 @@ Pop up window have text fields
 
 Obfuscation is a means of "obscuring" the real meaning and intent of your javascript code. Some sites use it as an obstacle to people who want to copy/borrow their code. Other sites use it as a means to hide the actual intention of the code.
 Some forms of obscuration:
+
 Automatically renaming variables to short meaningless names to make the code less readable and harder to understand.
 Removing all extra whitespace and line breaks so the code is one giant long line.
 Making parts of the code self-generating so that a first pass of the code runs to create the actual code that then runs to carry out the intended operation.
+
 Uses character codes and string manipulation combined with eval rather than normal javascript code to construct the actual code that would run. Source- StackOverflow
 Deobfuscate javascript code means make the code readable so that W.M.A investigate further. 
 
 ## Content Based
+
 W.M.A crawl through urls that it encountered during the scanning process and check if any links parameter “src=” and the website have different domain names.
 include html tag analysis under phishing attack features   and  url based analysis
 
