@@ -6,13 +6,13 @@ Analyzes Website source code and stores the details in database and show for use
 
 Install the following packages
 
-    $pip install django
+    $ pip install django
 
-    $pip install selenium 
+    $ pip install selenium 
 
-    $pip install requests
+    $ pip install requests
 
-    $pip install Beautifullsoup
+    $ pip install Beautifullsoup
 
 
 ## Getting Started 
@@ -22,14 +22,13 @@ Type below comand on your comman line, choose any port you want
     $ python manage.py runserver [port number]
 
 
-## Project final Plan
+## Project Description
 
-New words inside the document and their meanings
+## Introduction 
 
-
-## introduction 
-
-Attackers lure an unsuspecting victim to visit malicious websites and they steal important credentials from the victim or install malware on the victim's machine to use it as a springboard for future exploits. When the victim visits a malicious website, the attack is initiated and up on finding evidences of exploitable vulnerabilities (e.g., of browser components, of browser extensions), the attack payload is executed. Detection mechanisms have been developed since this problem detected. Most people who work in the anti-malware industry are familiar with signature-based detection, where if a file is determined to be malicious, a signature is written so anti-malware programs are able to detect that file or component in the future. As opposed to this method W.M.A uses both rule based and signature based detection methods.
+Attackers lure an unsuspecting victim to visit malicious websites and they steal important credentials from the victim or install malware on the victim's machine to use it as a springboard for future exploits. When the victim visits a malicious website, the attack is initiated and up on finding evidences of exploitable vulnerabilities (e.g., of browser components, of browser extensions), the attack payload is executed.
+Detection mechanisms have been developed since this problem detected. Most people who work in the anti-malware industry are familiar with signature-based detection, where if a file is determined to be malicious, a signature is written so anti-malware programs are able to detect that file or component in the future.
+As opposed to this method W.M.A uses both rule based and signature based detection methods.
 
 # Functonality 
 
@@ -39,7 +38,7 @@ Configuring X-frame header helps to protect a website from clickjacking “Click
 
 Scenario - If W has protection against clickjacking 
 it could be either frame buster or X-frame Options, “as frame busters are hacks. Nasty messy hacks of limited efficiency.
-what we really need is a simpler, more semantic means of specifying how and where a page may be used when it comes to being embedded in a frame and that's what we have in the X-Frame-Options (XFO) header.” source Troy Hunt. Based on this state
+what we really need is a simpler, more semantic means of specifying how and where a page may be used when it comes to being embedded in a frame and that's whatwe have in the X-Frame-Options (XFO) header.” source Troy Hunt.
 
 ### Declaration 
 
@@ -60,6 +59,7 @@ M1.values = {DENY, SAMEORIGIN, ALLOW-FROM}
    ```
                                  
 Tip : - Detection involves crawling through given url content and by looking for possible urls using automated google search engine.
+
 Real-time
 The detection performed by collecting resources of client side W resources. 
 
@@ -72,12 +72,16 @@ Malicious URL or  malicious website, is a common and serious threat to cybersecu
 
 ```python do 
 {
-            U input http://www.example.com W.MA request google search engine for the url and 
-                                                  Automated Google search
-                                                                        then 
-                                           W.M.A extracted possible related urls 
-                                                                       then 
-                                                Automated Google search feature 
+
+
+  U input http://www.example.com W.M.A request google search engine for the url and 
+       Automated Google search
+                 then 
+       W.M.A extracted possible related urls 
+                 then 
+      Automated Google search feature 
+
+
 }
  
 ```
@@ -91,14 +95,22 @@ Scenario
 ```python 
 
 if U give a valid url
+
 do
- {
-crawling through content involves all links which starts by given website url
-and
- Automated Google search
-}
+
+   {
+
+
+    crawling through content involves all links which starts by given website url
+                  and 
+
+    Automated Google search
+
+
+   }
 
 call X-FRAME option mitigation enable detection_func  and call Address Bar based features_func()  and call Google safe browsing blacklist_func   
+
 ```
 
 ### Redirected url analysis 
@@ -111,16 +123,24 @@ if U give a valid url that have a redirection capability. W.M.A get the final re
 
 ```python 
 
-def url_analysis()
-{
-do 
-{
-     crawling through content involves all links which starts by given website url
-and
- Automated Google search
-}
-call X-FRAME option mitigation enable detection_func and call Address Bar based features_func()  and call Google safe browsing blacklist_func 
-}
+ def url_analysis()
+
+     {
+       
+         do 
+           
+           {
+         
+   crawling through content involves all links which starts by given website url
+                and
+   Automated Google search
+           
+           }
+
+
+   call X-FRAME option mitigation enable detection_func and call Address Bar based features_func()  and call Google safe browsing blacklist_func 
+      
+      }
 
 ```
 
@@ -134,24 +154,28 @@ if U give an invalid url.
 
 ```python
 
-do
-{
-if  the url use google url shortener
-unshorten the url()
-call url_analysis()
-else
-alert(invalid url)
-}
-url_analysis()
-{
-do
- {
-crawling through content involves all links which starts by given website urls
-and
-                                                 Automated Google search
-}
-call X-FRAME option mitigation enable detection_func  and call Address Bar based features_func()  and call Google safe browsing blacklist_func 
-}
+  do
+   {
+     if  the url use google url shortener
+          unshorten the url()
+          call url_analysis()
+                else
+                  alert(invalid url)
+   }
+   
+          url_analysis()
+   {
+  
+  do
+  
+   {
+     
+       crawling through content involves all links which starts by given website urls
+                                        and
+       Automated Google search
+   }
+       call X-FRAME option mitigation enable detection_func  and call Address Bar based features_func()  and call Google safe browsing blacklist_func 
+   }
 ```
 
 ## Sample phishing features 
